@@ -12,7 +12,6 @@
 	background: #fff;
 	border: 3px solid #38618c;
 	border-radius: 7px;
-	display: none;
 }
 
 div#head 
@@ -48,7 +47,6 @@ div#head div#box_search input[type=date]
 
 div#head div#box_search button 
 {
-	background: #fff;
 	position: absolute;
 	width: 10%;
 	height: 110%;
@@ -153,6 +151,7 @@ div#body .task .task_done input[type=checkbox]
 	width: 1.5rem;
 	height: 1.5rem;
 	border: 3px solid #2e3131;
+	transition: .2s ease;
 }
 
 div#body .task .task_done input[type=checkbox]:checked 

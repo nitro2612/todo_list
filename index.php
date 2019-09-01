@@ -10,8 +10,8 @@
 		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 		<link type="text/css" rel="stylesheet" href="assets/util/colors.css">
 		<link type="text/css" rel="stylesheet" href="assets/css/style.css">
-		
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="https://kit.fontawesome.com/d3420f7f4c.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
 	</head>
@@ -72,7 +72,7 @@
 		</div>
 		<div id="item_add">
 			<h2>Add a task</h2>
-			<i class="far fa-times-circle fa-2x"></i>
+			<i id="btn_hide" class="far fa-times-circle fa-2x"></i>
 			<input type="text" name="add_title" id="add_title_id" placeholder="Title">
 			<br>
 			<input type="text" name="add_description" class="add_description_c" placeholder="Description">
