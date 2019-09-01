@@ -7,8 +7,9 @@
 		<meta charset="utf-8">
 		
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+		<link type="text/css" rel="stylesheet" href="assets/util/colors.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/style.css">
 		
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
 		<script src="https://kit.fontawesome.com/d3420f7f4c.js"></script>
@@ -69,17 +70,25 @@
 				<input type="button" name="btn_delete" id="btn_delete_id" value="Delete selected">
 			</div>
 		</div>
-		<div id="item-add">
-			<h1>Add a task</h1>
+		<div id="item_add">
+			<h2>Add a task</h2>
+			<i class="far fa-times-circle fa-2x"></i>
 			<input type="text" name="add_title" id="add_title_id" placeholder="Title">
 			<br>
-			<input type="text" name="add_description" class="add_description" placeholder="Description">
+			<input type="text" name="add_description" class="add_description_c" placeholder="Description">
 			<br>
-			<input type="text" name="add_description_2" class="add_description" placeholder="Description 2">
+			<input type="text" name="add_description_2" class="add_description_c" placeholder="Description 2">
+			<br>
+			<button id="add_desc_add">Add description</button>
 			<br>
 			<label for="add_expire_date_id">Expires at</label>
+			<br>
 			<input type="date" name="add_expire_date" id="add_expire_date_id">
+			<br>
 			<input type="time" name="add_expire_time" id="add_expire_time_id">
+			<br>
+			<span id="sperator"></span>
+			<button id="add_final">Add task</button>
 		</div>
 	</body>
 </html>
