@@ -9,7 +9,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
 		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 		<link type="text/css" rel="stylesheet" href="assets/util/colors.css">
-		<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/style_todo_list.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/style_frame_add.css">
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="https://kit.fontawesome.com/d3420f7f4c.js"></script>

@@ -1,15 +1,14 @@
 $(document).ready(function()
 {
-    $("#item_add").hide();
 
 	$('#btn_add').click(function () {
-        $("#item_add").toggle(1000);
-        $("#todo_list").toggle(1000);
+	    $('#item_add').animate({marginLeft: '35%'});
+	    $('#todo_list').animate({marginLeft: '-45%'});
     });
 
     $('#btn_hide').click(function () {
-        $("#item_add").toggle(1000);
-        $("#todo_list").toggle(1000);
+        $("#item_add").animate({marginLeft: '120%'});
+        $("#todo_list").animate({marginLeft: '30%'});
     });
 
 });

@@ -5,6 +5,17 @@
 	font-family: 'Open Sans';
 }
 
+h1#title
+{
+	text-align: center;
+	margin: 2rem 0 0 0;
+}
+
+body
+{
+	overflow-x: hidden;
+}
+
 #todo_list 
 {
 	width: 40%;
@@ -177,139 +188,3 @@ div#footer input[type=button]:hover
 {
 	background: #ff3341;
 }
-
-div#item_add 
-{
-	width: 30%;
-	background: #fff;
-	margin: 1rem 0 0 35%;
-	border: 3px solid #38618c;
-	position: relative;
-}
-
-div#item_add h2 
-{
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: #2e3131;
-	padding: 1rem 0 1rem 5%;
-	border-bottom: 3px solid #38618c;
-}
-
-div#item_add i 
-{
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 1rem 3% 0 0;
-	color: #2e3131;
-	transition: color .2s ease;
-	cursor: pointer;
-}
-
-div#item_add i:hover 
-{
-	color: var(--red);
-}
-
-div#item_add input#add_title_id 
-{
-	width: 66%;
-	padding: 0 2% 0 2%;
-	height: 3rem;
-	font-size: 1.25rem;
-	margin: 1rem 0 1rem 15%;
-	border: 2px solid #2e3131;
-	border-radius: 3px;
-}
-
-div#item_add input.add_description_c 
-{
-	width: 56%;
-	height: 2rem;
-	padding: 0 2% 0 2%;
-	margin: 0.5rem 0 0.5rem 20%;
-	border: 2px solid #2e3131;
-	border-radius: 3px;
-	font-size: 0.9rem;
-}
-
-div#item_add button#add_desc_add 
-{
-	width: 20%;
-	height: 2rem; margin : 1rem 0 0 40%;
-	border: none;
-	background: #ff5964;
-	border-radius: 3px;
-	color: #fff;
-	transition: .2s ease;
-	cursor: pointer;
-	margin: 1rem 0 0 40%;
-}
-
-div#item_add button#add_desc_add:hover 
-{
-	background-color: var(--red_darker);
-}
-
-div#item_add label {
-	display: block;
-	text-align: center;
-	margin: 1.5rem 0 0 0;
-	padding: 1rem 0 0 0;
-	border-top: 2px solid var(--dark_blue);
-}
-
-div#item_add input#add_expire_date_id,
-div#item_add input#add_expire_time_id
-{
-	height: 2rem;
-	padding: 0 2% 0 2%;
-	font-size: 1rem;
-	border: 2px solid var(--dark_grey);
-	border-radius: 3px;
-}
- 
-div#item_add input#add_expire_date_id
-{
-	width: 20%;
-	margin: 0 0 0 38%;
-}
- 
-div#item_add input#add_expire_time_id
-{
-	width: 12%;	
-	margin: 0.5rem 0 1rem 43%;
-	
-}
- 
-div#item_add button#add_final
-{
-	width: 24%;
-	height: 2.5rem; margin : 1rem 0 0 40%;
-	border: none;
-	background: var(--green);
-	border-radius: 3px;
-	color: #fff;
-	transition: .2s ease;
-	cursor: pointer;
-	margin: 1.5rem 0 1.5rem 38%;
-}
- 
-div#item_add button#add_final:hover
-{
-	background: var(--green_darker);
-}
- 
-div#item_add span#sperator
-{
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background: var(--dark_blue);
-}
- 
- 
- 
- 
- 
