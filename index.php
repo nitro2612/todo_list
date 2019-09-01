@@ -11,12 +11,15 @@
 		<link type="text/css" rel="stylesheet" href="assets/util/colors.css">
 		<link type="text/css" rel="stylesheet" href="assets/css/style_todo_list.css">
         <link type="text/css" rel="stylesheet" href="assets/css/style_frame_add.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/style_login.css">
+        <link type="text/css" rel="stylesheet" href="assets/css/style_util.css">
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="https://kit.fontawesome.com/d3420f7f4c.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
 	</head>
 	<body>
+        <button id="btn_login_land">Login</button>
 		<h1 id="title">ToDo-List</h1>
 		<div id="todo_list">
 			<div id="head">
@@ -88,8 +91,19 @@
 			<br>
 			<input type="time" name="add_expire_time" id="add_expire_time_id">
 			<br>
-			<span id="sperator"></span>
+			<span class="seperator"></span>
 			<button id="add_final">Add task</button>
 		</div>
+        <div id="login">
+            <h2>Login</h2>
+            <i id="btn_hide_login" class="far fa-times-circle fa-2x"></i>
+            <input type="text" name="login_username" id="username_login" placeholder="Username">
+            <br>
+            <input type="text" name="login_password" id="password_login" placeholder="Password">
+            <p id="acc_create">Don't have an account yet? <a>Create one</a></p>
+            <br>
+            <span class="seperator"></span>
+            <button>Login</button>
+        </div>
 	</body>
 </html>
