@@ -1,5 +1,6 @@
 # todo_list
-[IN DEVELOPMENT]\n
+[IN DEVELOPMENT]
+
 A simple ToDo-list
 
 This project includes a simple ToDo-list.
