@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="de">
 	<head>
 		<title>ToDo List</title>
 		
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 		
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
-		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-		<link type="text/css" rel="stylesheet" href="assets/util/colors.css">
-		<link type="text/css" rel="stylesheet" href="assets/css/style_todo_list.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/style_frame_add.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/style_login.css">
-        <link type="text/css" rel="stylesheet" href="assets/css/style_util.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+		<link type="text/css" rel="stylesheet" href="assets/util/colors.css" />
+		<link type="text/css" rel="stylesheet" href="assets/css/style_todo_list.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/style_frame_add.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/style_login.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/style_util.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/style_sidebar.css" />
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
 		<script src="https://kit.fontawesome.com/d3420f7f4c.js"></script>
 		<script type="text/javascript" src="assets/js/main.js"></script>
 	</head>
@@ -55,7 +57,7 @@
 					</div>
 					<div class="task_done">
 						<p>Done</p>
-						<input type="checkbox" class="task_done_checkbox">
+						<input type="checkbox" class="task_done_checkbox" />
 					</div>
 				</div>
 				<div id="task_3" class="task">
@@ -103,7 +105,17 @@
             <p id="acc_create">Don't have an account yet? <a>Create one</a></p>
             <br>
             <span class="seperator"></span>
-            <button>Login</button>
+            <form action="login.php" method="post">
+                <button id="btn_login">Login</button>
+            </form>
+        </div>
+        <div id="sidebar">
+            <div id="weather">
+                <h1 id="temperature"><i class="fas fa-thermometer-half"></i> <span id="temp_num"></span>&#x00B0;C</h1>
+            </div>
+            <div id="location">
+                <h1 id="loc"></h1>
+            </div>
         </div>
 	</body>
 </html>

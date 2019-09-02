@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e00864-1d57-45b6-aeac-814abfa374e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/style_util.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/style_sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/todo_list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/todo_list.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style_frame_add.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style_frame_add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style_login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style_login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/util/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/util/colors.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
@@ -70,7 +71,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567353299205</updated>
-      <workItem from="1567353301290" duration="6316000" />
+      <workItem from="1567353301290" duration="7242000" />
+      <workItem from="1567445890739" duration="5466000" />
     </task>
     <servers />
   </component>
@@ -82,7 +84,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

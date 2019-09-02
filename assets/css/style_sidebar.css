@@ -1,0 +1,36 @@
+div#sidebar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: var(--light_grey);
+    border-right: 3px solid var(--dark_blue);
+}
+
+div#sidebar div#weather,
+div#sidebar div#location
+{
+    width: 100%;
+}
+
+div#sidebar div#weather h1,
+div#sidebar div#location h1
+{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    color: var(--white);
+}
+
+div#sidebar div#location
+{
+    background: #9b59b6;
+}
+
+div#sidebar div#weather i
+{
+    color: var(--white);
+}
