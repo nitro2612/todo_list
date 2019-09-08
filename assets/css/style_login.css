@@ -68,7 +68,8 @@ div#login input#username_login
     margin-top: 2.5rem;
 }
 
-div#login p#acc_create
+div#login p#acc_create,
+div#log p#show_login
 {
     text-align: center;
     color: var(--dark_grey);

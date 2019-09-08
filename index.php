@@ -99,23 +99,17 @@
         <div id="login">
             <h2>Login</h2>
             <i id="btn_hide_login" class="far fa-times-circle fa-2x"></i>
-            <input type="text" name="login_username" id="username_login" placeholder="Username">
-            <br>
-            <input type="text" name="login_password" id="password_login" placeholder="Password">
-            <p id="acc_create">Don't have an account yet? <a>Create one</a></p>
+            <div id="login_input">
+                <input type="text" name="login_Username" id="username_id" placeholder="Username"/>
+                <br>
+                <input type="password" name="login_password" id="password_id" placeholder="Password"/>
+            </div>
+            <p id="acc_create">Or rather <a>Create an account</a></p>
             <br>
             <span class="seperator"></span>
             <form action="login.php" method="post">
                 <button id="btn_login">Login</button>
             </form>
-        </div>
-        <div id="sidebar">
-            <div id="weather">
-                <h1 id="temperature"><i class="fas fa-thermometer-half"></i> <span id="temp_num"></span>&#x00B0;C</h1>
-            </div>
-            <div id="location">
-                <h1 id="loc"></h1>
-            </div>
         </div>
 	</body>
 </html>

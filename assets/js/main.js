@@ -1,29 +1,55 @@
-var city = geoplugin_city();
-var link = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=b3cd3658e8a64d8050b54e12162b1384';
+$(document).ready(function()
+{
+    let registration = false;
 
-function setTempBackground(data)
-{
-    if(data.main.temp < 8)
-    {
-        $('#temperature').css('background', '#3498db');
-    }
-    else if(data.main.temp > 22)
-    {
-        $('#temperature').css('background', '#e74c3c');
-    }
-    else
-    {
-        $('#temperature').css('background', '#2ecc71');
-    }
-}
-function printTemperatureToSidebar(data)
-{
-    $('#temperature #temp_num').html(Math.round(data.main.temp - 273));
-}
-function printCityToSidebar()
-{
-    $('#location #loc').html(city);
-}
+   clearInput();
+   openModule();
+   showRegistration();
+
+    $('#acc_create a').click(function () {
+
+        if(registration === false)
+        {
+            let box_input = $('#login_input');
+
+            $('#login h2').html('Registration');
+
+            $('#login_input #username_id').remove();
+            $('#login_input #password_id').remove();
+
+            box_input.append('<input type="text" name="login_first_name" id="first_name_id" placeholder="First name"/>');
+            box_input.append('<input type="text" name="login_last_name" id="last_name_id" placeholder="Last name"/>');
+            box_input.append('<input type="text" name="login_Username" id="username_id" placeholder="Username"/>');
+            box_input.append('<input type="email" name="login_email" id="email_id" placeholder="E-Mail"/>');
+            box_input.append('<input type="email" name="login_email_r" id="email_r_id" placeholder="Repeat E-Mail"/>');
+            box_input.append('<input type="password" name="login_password" id="password_id" placeholder="Password"/>');
+            box_input.append('<input type="password" name="login_password_r" id="password_r_id" placeholder="Repeat password"/>');
+
+            $('#login p#acc_create a').html('Login');
+            $('#login button#btn_login').html('Register');
+            registration = true;
+        }
+        else if(registration === true)
+        {
+            $('#login h2').html('Login');
+
+            $('#first_name_id').remove();
+            $('#last_name_id').remove();
+            $('#email_id').remove();
+            $('#email_r_id').remove();
+            $('#password_r_id').remove();
+
+            $('#login p#acc_create a').html('Create an account');
+            $('#login button#btn_login').html('Login');
+
+            registration = false;
+
+        }
+
+    });
+
+});
+
 function clearInput()
 {
     $('input[type=text]').val('');
@@ -59,25 +85,7 @@ function openModule()
     });
 }
 
-function setup(data)
+function showRegistration()
 {
-    clearInput();
-    openModule();
-    setTempBackground(data);
-    printCityToSidebar();
-    printTemperatureToSidebar(data);
-}
 
-$(document).ready(function()
-{
-    $.ajax({
-        url: link,
-        method: 'POST',
-        dataType: 'JSON',
-        success: function (json)
-        {
-            setup(json);
-        },
-        error: function () {alert('Error!');}
-    });
-});
+}

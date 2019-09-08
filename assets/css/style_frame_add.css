@@ -5,6 +5,7 @@ div#item_add
     background: #fff;
     margin: 7rem 0 0 120%;
     border: 3px solid #38618c;
+    border-radius: 7px;
     position: absolute;
 }
 
@@ -58,7 +59,7 @@ div#item_add input.add_description_c
 div#item_add button#add_desc_add
 {
     width: 20%;
-    height: 2rem; margin : 1rem 0 0 40%;
+    height: 2rem;
     border: none;
     background: #ff5964;
     border-radius: 3px;
