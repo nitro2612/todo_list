@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+<?php
 
+session_start();
+if(isset($_SESSION['userid']))
+
+?>
 <html lang="de">
 	<head>
 		<title>ToDo List</title>
@@ -21,6 +26,7 @@
 		<script type="text/javascript" src="assets/js/main.js"></script>
 	</head>
 	<body>
+    <h1><?php echo 'Hallo' . $_SESSION['username'] . ', Sie sind ein ' . $_SESSION['role']; ?></h1>
         <button id="btn_login_land">Login</button>
 		<h1 id="title">ToDo-List</h1>
 		<div id="todo_list">
@@ -99,15 +105,15 @@
         <div id="login">
             <h2>Login</h2>
             <i id="btn_hide_login" class="far fa-times-circle fa-2x"></i>
-            <div id="login_input">
-                <input type="text" name="login_Username" id="username_id" placeholder="Username"/>
+            <form id="reg_log" action="php/login.php" method="post">
+                <div id="login_input">
+                    <input type="text" name="login_username" id="username_id" placeholder="Username"/>
+                    <br>
+                    <input type="password" name="login_password" id="password_id" placeholder="Password"/>
+                </div>
+                <p id="acc_create">Or rather <a>Create an account</a></p>
                 <br>
-                <input type="password" name="login_password" id="password_id" placeholder="Password"/>
-            </div>
-            <p id="acc_create">Or rather <a>Create an account</a></p>
-            <br>
-            <span class="seperator"></span>
-            <form action="login.php" method="post">
+                <span class="seperator"></span>
                 <button id="btn_login">Login</button>
             </form>
         </div>
