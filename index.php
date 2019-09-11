@@ -94,28 +94,34 @@
 				</div>
 			</div>
 			<div id="footer">
-				<input type="button" name="btn_delete" id="btn_delete_id" value="Delete selected">
+				<input type="button" name="btn_delete" id="btn_delete_id" value="Delete selected" />
 			</div>
 		</div>
 		<div id="item_add">
 			<h2>Add a task</h2>
 			<i id="btn_hide" class="far fa-times-circle fa-2x"></i>
-			<input type="text" name="add_title" id="add_title_id" placeholder="Title">
-			<br>
-			<input type="text" name="add_description" class="add_description_c" placeholder="Description">
-			<br>
-			<input type="text" name="add_description_2" class="add_description_c" placeholder="Description 2">
-			<br>
-			<button id="add_desc_add">Add description</button>
-			<br>
-			<label for="add_expire_date_id">Expires at</label>
-			<br>
-			<input type="date" name="add_expire_date" id="add_expire_date_id">
-			<br>
-			<input type="time" name="add_expire_time" id="add_expire_time_id">
-			<br>
-			<span class="seperator"></span>
-			<button id="add_final">Add task</button>
+            <form action="" method="POST">
+                <input type="text" name="add_title" id="add_title_id" placeholder="Title" />
+                <br>
+                <div id="box_desc">
+                    <input type="text" name="add_description" class="add_description_c" placeholder="Description" />
+                    <br>
+                    <input type="text" name="add_description_2" class="add_description_c" placeholder="Description 2" />
+                    <br>
+                </div>
+                <center>
+                    <a id="add_desc_add">Add description</a>
+                </center>
+                <br>
+                <label for="add_expire_date_id">Expires at</label>
+                <br>
+                <input type="date" name="add_expire_date" id="add_expire_date_id" />
+                <br>
+                <input type="time" name="add_expire_time" id="add_expire_time_id" />
+                <br>
+                <span class="seperator"></span>
+                <button id="add_final">Add task</button>
+            </form>
 		</div>
         <div id="login">
             <h2>Login</h2>

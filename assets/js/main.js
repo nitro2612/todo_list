@@ -4,6 +4,12 @@ $(document).ready(function()
    openModule();
    toggleRegistrationFrame();
 
+    $('#add_desc_add').click(function ()
+    {
+        var amount = $('#box_desc input').length + 1;
+        if(amount <= 10)
+            $('#box_desc').append('<input type="text" name="add_description_' + amount + '" class="add_description_c" placeholder="Description ' + amount + '" />' + '<br>');
+    })
 
 });
 
@@ -44,15 +50,14 @@ function openModule()
 
     $('#btn_management').click(function ()
     {
-        window.open('management.php');
+        window.location.href = 'management.php';
     });
 
     $('#btn_man_back_home').click(function ()
     {
-        window.open('index.php');
+        window.location.href = 'index.php';
     });
 }
-
 function toggleRegistrationFrame()
 {
     var registration = false;

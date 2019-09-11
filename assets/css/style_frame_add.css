@@ -51,8 +51,9 @@ div#item_add input.add_description_c
     font-size: 0.9rem;
 }
 
-div#item_add button#add_desc_add
+div#item_add a#add_desc_add
 {
+    position: relative;
     width: 20%;
     height: 2rem;
     border: none;
@@ -61,7 +62,9 @@ div#item_add button#add_desc_add
     color: var(--white);
     transition: .2s ease;
     cursor: pointer;
-    margin: 1rem 0 0 40%;
+    margin: 1rem 0 -1rem 0 ;
+    padding: 0.5rem 2% 0.5rem 2%;
+    font-size: 0.7rem;
 }
 
 div#item_add label {
@@ -93,6 +96,7 @@ div#item_add button#add_final
     transition: .2s ease;
     cursor: pointer;
     margin: 1.5rem 0 1.5rem 38%;
+    font-size: 1rem;
 }
 
 div#item_add span.seperator
