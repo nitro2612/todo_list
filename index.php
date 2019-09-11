@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<?php
-
-session_start();
-if(isset($_SESSION['userid']))
-
-?>
+<?php session_start(); ?>
 <html lang="de">
 	<head>
 		<title>ToDo List</title>
@@ -26,8 +21,28 @@ if(isset($_SESSION['userid']))
 		<script type="text/javascript" src="assets/js/main.js"></script>
 	</head>
 	<body>
-    <h1><?php echo 'Hallo' . $_SESSION['username'] . ', Sie sind ein ' . $_SESSION['role']; ?></h1>
-        <button id="btn_login_land">Login</button>
+        <?php if(!isset($_SESSION['userid'])): ?>
+            <button id="btn_login_land">Login</button>
+            <div id="content_user_info">
+                <div id="btn_settings_n_l_i">
+                    <i class="fas fa-user fa-3x"></i>
+                </div>
+                <h2 id="name_msg">You are not logged in</h2>
+            </div>
+        <?php else: ?>
+            <?php if($_SESSION['role'] == 'admin'): ?>
+                <button id="btn_management">Management</button>
+            <?php endif; ?>
+            <form action="php/logout.php" method="POST">
+                <button id="btn_logout">Logout</button>
+            </form>
+            <div id="content_user_info">
+                <div id="btn_settings">
+                    <i class="fas fa-user fa-3x"></i>
+                </div>
+                <h2 id="name_msg"><?php echo 'You are logged in as ' . $_SESSION['username']; ?></h2>
+            </div>
+        <?php endif; ?>
 		<h1 id="title">ToDo-List</h1>
 		<div id="todo_list">
 			<div id="head">

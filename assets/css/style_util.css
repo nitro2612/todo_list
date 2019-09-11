@@ -1,4 +1,8 @@
-button#btn_login_land
+* {margin: 0; padding: 0; font-family: 'Open Sans', serif;}
+
+button#btn_login_land,
+button#btn_logout,
+button#btn_management
 {
     position: absolute;
     font-size: 1rem;
@@ -9,13 +13,39 @@ button#btn_login_land
     border: none;
     background: var(--light_blue);
     border-radius: 3px;
-    color: #fff;
+    color: var(--white);
     transition: .2s ease;
     cursor: pointer;
     margin: 1.5rem 1.5% 0 0;
 }
 
-button#btn_login_land:hover
+div#content_user_info div#btn_settings,
+div#content_user_info div#btn_settings_n_l_i
 {
-    background-color: var(--light_blue_darker);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    margin: 1.5rem 0 0 1.5%;
+    transition: .3s ease;
+    cursor: pointer;
+    border-radius: 10px;
 }
+
+div#content_user_info h2#name_msg
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark_grey);
+    margin: 2.7rem 0 0 6%;
+}
+
+button#btn_login_land:hover                         {background-color: var(--light_blue_darker);}
+button#btn_management                               {background-color: var(--green); margin-top: 4.5rem;}
+button#btn_management:hover                         {background-color: var(--green_darker);}
+button#btn_logout                                   {background-color: var(--red);}
+button#btn_logout:hover                             {background-color: var(--red_darker);}
+div#content_user_info div#btn_settings:hover,
+div#content_user_info div#btn_settings_n_l_i:hover  {background-color: var(--light_grey);}
+div#content_user_info div#btn_settings i            {color: var(--light_blue);}
+div#content_user_info div#btn_settings_n_l_i i      {color: var(--red);}

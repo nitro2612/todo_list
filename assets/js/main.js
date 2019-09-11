@@ -41,6 +41,16 @@ function openModule()
         $("#todo_list").animate({marginLeft: '30%'});
         $('#btn_login_land').animate({marginRight: '1.5%'});
     });
+
+    $('#btn_management').click(function ()
+    {
+        window.open('management.php');
+    });
+
+    $('#btn_man_back_home').click(function ()
+    {
+        window.open('index.php');
+    });
 }
 
 function toggleRegistrationFrame()

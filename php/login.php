@@ -26,7 +26,7 @@
                 $_SESSION['created_at'] = $row[7];
                 $_SESSION['last_updated_at'] = $row[8];
                 $_SESSION['role'] = $row[9];
-                header('refresh:2; url=../index.php');
+                header('Location: ../index.php');
             }
             else
             {

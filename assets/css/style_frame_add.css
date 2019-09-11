@@ -2,9 +2,9 @@ div#item_add
 {
     top: 0;
     width: 30%;
-    background: #fff;
+    background: var(--white);
     margin: 7rem 0 0 120%;
-    border: 3px solid #38618c;
+    border: 3px solid var(--dark_blue);
     border-radius: 7px;
     position: absolute;
 }
@@ -13,9 +13,9 @@ div#item_add h2
 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #2e3131;
+    color: var(--dark_grey);
     padding: 1rem 0 1rem 5%;
-    border-bottom: 3px solid #38618c;
+    border-bottom: 3px solid var(--dark_blue);
 }
 
 div#item_add i
@@ -24,14 +24,9 @@ div#item_add i
     top: 0;
     right: 0;
     margin: 1rem 3% 0 0;
-    color: #2e3131;
+    color: var(--dark_grey);
     transition: color .2s ease;
     cursor: pointer;
-}
-
-div#item_add i:hover
-{
-    color: var(--red);
 }
 
 div#item_add input#add_title_id
@@ -41,7 +36,7 @@ div#item_add input#add_title_id
     height: 3rem;
     font-size: 1.25rem;
     margin: 1rem 0 1rem 15%;
-    border: 2px solid #2e3131;
+    border: 2px solid var(--dark_grey);
     border-radius: 3px;
 }
 
@@ -51,7 +46,7 @@ div#item_add input.add_description_c
     height: 2rem;
     padding: 0 2% 0 2%;
     margin: 0.5rem 0 0.5rem 20%;
-    border: 2px solid #2e3131;
+    border: 2px solid var(--dark_grey);
     border-radius: 3px;
     font-size: 0.9rem;
 }
@@ -61,17 +56,12 @@ div#item_add button#add_desc_add
     width: 20%;
     height: 2rem;
     border: none;
-    background: #ff5964;
+    background: var(--red);
     border-radius: 3px;
-    color: #fff;
+    color: var(--white);
     transition: .2s ease;
     cursor: pointer;
     margin: 1rem 0 0 40%;
-}
-
-div#item_add button#add_desc_add:hover
-{
-    background-color: var(--red_darker);
 }
 
 div#item_add label {
@@ -92,19 +82,6 @@ div#item_add input#add_expire_time_id
     border-radius: 3px;
 }
 
-div#item_add input#add_expire_date_id
-{
-    width: 20%;
-    margin: 0 0 0 38%;
-}
-
-div#item_add input#add_expire_time_id
-{
-    width: 12%;
-    margin: 0.5rem 0 1rem 43%;
-
-}
-
 div#item_add button#add_final
 {
     width: 24%;
@@ -112,15 +89,10 @@ div#item_add button#add_final
     border: none;
     background: var(--green);
     border-radius: 3px;
-    color: #fff;
+    color: var(--white);
     transition: .2s ease;
     cursor: pointer;
     margin: 1.5rem 0 1.5rem 38%;
-}
-
-div#item_add button#add_final:hover
-{
-    background: var(--green_darker);
 }
 
 div#item_add span.seperator
@@ -130,3 +102,9 @@ div#item_add span.seperator
     height: 2px;
     background: var(--dark_blue);
 }
+
+div#item_add button#add_final:hover     {background: var(--green_darker);}
+div#item_add input#add_expire_date_id   {width: 20%; margin: 0 0 0 38%;}
+div#item_add input#add_expire_time_id   {width: 12%; margin: 0.5rem 0 1rem 43%;}
+div#item_add button#add_desc_add:hover  {background-color: var(--red_darker);}
+div#item_add i:hover                    { color: var(--red);}

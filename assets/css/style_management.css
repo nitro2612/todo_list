@@ -1,0 +1,103 @@
+table
+{
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid var(--dark_grey);
+    margin: 0.5rem 0 0 10%;
+}
+
+table thead, tbody
+{
+    width: 100%;
+}
+
+table thead tr th,
+table tbody tr td
+{
+    text-align: center;
+    border: 1px solid var(--dark_grey);
+    color: var(--dark_grey);
+    padding: 0.5rem;
+}
+
+div#header button#btn_man_back_home
+{
+    position: absolute;
+    font-size: 1rem;
+    top: 0;
+    right: 0;
+    width: 8%;
+    height: 2.5rem;
+    border: none;
+    background: var(--light_blue);
+    border-radius: 3px;
+    color: var(--white);
+    transition: .2s ease;
+    cursor: pointer;
+    margin: 1.5rem 1.5% 0 0;
+}
+
+div#header div#user_new
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.5rem 0 0 1.5%;
+    border-radius: 10px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+div#man_control
+{
+    width: 80%;
+    margin: 0 0 0 10%;
+    border: 1px solid var(--dark_grey);
+}
+
+div#man_control input
+{
+    width: 16%;
+    height: 3rem;
+    margin: 1rem 0 1rem 1.5%;
+    padding: 0 2% 0 2%;
+    font-size: 1rem;
+    border: 1px solid var(--dark_grey);
+}
+
+div#man_control select
+{
+    height: 3.1rem;
+    width: 16%;
+    padding: 0 2% 0 2%;
+    font-size: 1rem;
+    border: 1px solid var(--dark_grey);
+    margin: 0 0 0 1rem;
+}
+
+div#man_control button
+{
+    width: 4%;
+    height: 3rem;
+    font-size: 1rem;
+    float: right;
+    margin: 1rem 55.5% 0 0;
+    border: 1px solid var(--dark_grey);
+    background: transparent;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+div#man_control button i {color: var(--dark_grey); transition: .2s ease;}
+div#man_control button:hover {background: var(--dark_grey);}
+div#man_control button:hover i {color: var(--white);}
+div#header div#user_new:hover {background-color: var(--light_grey);}
+div#header div#user_new i {color: var(--light_blue); padding: 0.6rem 0.4rem 0.6rem 0.4rem;}
+div#header button#btn_man_back_home:hover {background: var(--light_blue_darker);}
+div#header h1 {text-align: center; color: var(--dark_grey); font-size: 1.8rem; margin: 2rem 0 2rem 0;}
+td.edit i {color: var(--light_blue); cursor: pointer; transition: .2s ease;}
+td.delete i {color: var(--red); cursor: pointer; transition: .2s ease;}
+td.edit i:hover {color: var(--light_blue_darker);}
+td.delete i:hover {color: var(--red_darker);}
+table tbody tr {transition: .2s ease;}
+table tbody tr:hover {background-color: var(--light_grey);}

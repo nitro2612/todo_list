@@ -1,34 +1,10 @@
-* 
-{
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans';
-}
-
-h1#title
-{
-	text-align: center;
-	margin: 2rem 0 0 0;
-}
-
-body
-{
-	overflow-x: hidden;
-}
-
-#todo_list 
+#todo_list
 {
 	width: 40%;
 	margin: 2rem 0 0 30%;
-	background: #fff;
-	border: 3px solid #38618c;
+	background: var(--white);
+	border: 3px solid var(--dark_blue);
 	border-radius: 7px;
-}
-
-div#head 
-{
-	border-bottom: 3px solid #38618c;
-	position: relative;
 }
 
 div#head div#box_search 
@@ -46,13 +22,13 @@ div#head div#box_search input[type=date]
 	width: 72%;
 	font-size: 1rem;
 	padding: 0 2.5% 0 2.5%;
-	color: #2e3131;
+	color: var(--dark_grey);
 	height: 100%;
 	top: 0;
 	left: 0;
 	margin: 0 0 0 0;
 	background: transparent;
-	border: 3px solid #35a7ff;
+	border: 3px solid var(--light_blue);
 	border-radius: 5px;
 }
 
@@ -65,20 +41,15 @@ div#head div#box_search button
 	right: 0;
 	margin: 0 10% 0 0;
 	background: transparent;
-	border: 3px solid #35a7ff;
+	border: 3px solid var(--light_blue);
 	border-radius: 5px;
 	cursor: pointer;
 	transition: .2s ease;
 }
 
-div#head button i 
-{
-	color: #ff5964;
-}
-
 div#head div#btn_add 
 {
-	background: #fff;
+	background: var(--white);
 	display: block;
 	position: absolute;
 	top: 0;
@@ -90,22 +61,11 @@ div#head div#btn_add
 	cursor: pointer;
 }
 
-div#head div#btn_add i 
-{
-	color: #2ecc71;
-}
-
 div#body .task {
 	width: 100%;
 	position: relative;
-	border-bottom: 3px solid #38618c;
+	border-bottom: 3px solid var(--dark_blue);
 	height: 100%;
-}
-
-div#body .task .task_main_content 
-{
-	width: 85%;
-	word-wrap: break-word;
 }
 
 div#body .task .task_main_content h2 
@@ -113,7 +73,7 @@ div#body .task .task_main_content h2
 	width: 80%;
 	padding: 0.5rem 0 0 5%;
 	font-size: 1.5rem;
-	color: #38618c;
+	color: var(--dark_blue);
 }
 
 div#body .task .task_main_content p.task_description 
@@ -121,19 +81,7 @@ div#body .task .task_main_content p.task_description
 	font-size: 1rem;
 	width: 80%;
 	margin: 0.2rem 0 0 7%;
-	color: #2e3131;
-}
-
-div#body .task .task_main_content p.task_description i 
-{
-	color: #35a7ff;
-}
-
-div#body .task .task_main_content p.expiry 
-{
-	font-size: 0.9rem;
-	margin: 0.5rem 0 1rem 7%;
-	color: #ff5964;
+	color: var(--dark_grey);
 }
 
 div#body .task .task_done 
@@ -142,14 +90,8 @@ div#body .task .task_done
 	width: 15%;
 	right: 0;
 	top: 0;
-	border-left: 3px solid #38618c;
+	border-left: 3px solid var(--dark_blue);
 	height: 100%;
-}
-
-div#body .task .task_done p 
-{
-	text-align: center;
-	margin: 0.5rem 0 0 0;
 }
 
 div#body .task .task_done input[type=checkbox] 
@@ -161,13 +103,8 @@ div#body .task .task_done input[type=checkbox]
 	-moz-appearance: none;
 	width: 1.5rem;
 	height: 1.5rem;
-	border: 3px solid #2e3131;
+	border: 3px solid var(--dark_grey);
 	transition: .2s ease;
-}
-
-div#body .task .task_done input[type=checkbox]:checked 
-{
-	background: #2ecc71;
 }
 
 div#footer input[type=button] 
@@ -177,14 +114,21 @@ div#footer input[type=button]
 	border: none;
 	margin: 1rem 0 1rem 40%;
 	border-radius: 5px;
-	background: #ff5964;
+	background: var(--red);
 	font-size: 1rem;
-	color: #fff;
+	color: var(--white);
 	transition: .2s ease;
 	cursor: pointer;
 }
-
-div#footer input[type=button]:hover 
-{
-	background: #ff3341;
-}
+body 													{overflow-x: hidden;}
+div#footer input[type=button]:hover 					{background: var(--red_darker);}
+h1#title 												{text-align: center;margin: 2rem 0 0 0;}
+div#body .task .task_done input[type=checkbox]:checked 	{background: var(--green);}
+div#body .task .task_done p 							{text-align: center;margin: 0.5rem 0 0 0;}
+div#body .task .task_main_content p.task_description i 	{color: var(--light_blue);}
+div#body .task .task_main_content p.expiry 				{font-size: 0.9rem;margin: 0.5rem 0 1rem 7%;color: var(--red);}
+div#body .task .task_main_content 						{width: 85%;word-wrap: break-word;}
+div#head div#btn_add i 									{color: var(--green);}
+div#head button i 										{color: var(--red);}
+div#head 												{border-bottom: 3px solid var(--dark_blue);position: relative;}
+h1#title												{text-align: center; color: var(--dark_grey); font-size: 1.8rem; margin: 0 0 2rem 0;}

@@ -2,9 +2,9 @@ div#login
 {
     top: 0;
     width: 30%;
-    background: #fff;
+    background: var(--white);
     margin: 7rem 0 0 120%;
-    border: 3px solid #38618c;
+    border: 3px solid var(--dark_blue);
     border-radius: 7px;
     position: absolute;
 }
@@ -13,9 +13,9 @@ div#login h2
 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #2e3131;
+    color: var(--dark_grey);
     padding: 1rem 0 1rem 5%;
-    border-bottom: 3px solid #38618c;
+    border-bottom: 3px solid var(--dark_blue);
 }
 
 div#login i
@@ -24,14 +24,9 @@ div#login i
     top: 0;
     right: 0;
     margin: 1rem 3% 0 0;
-    color: #2e3131;
+    color: var(--dark_grey);
     transition: color .2s ease;
     cursor: pointer;
-}
-
-div#login i:hover
-{
-    color: var(--red);
 }
 
 div#login input
@@ -53,37 +48,16 @@ div#login button
     border: none;
     background: var(--green);
     border-radius: 3px;
-    color: #fff;
+    color: var(--white);
     transition: .2s ease;
     cursor: pointer;
     margin: 1.5rem 0 1.5rem 38%;
 }
 
-div#login button:hover
-{
-    background: var(--green_darker);
-}
-
-div#login input#username_login
-{
-    margin-top: 2.5rem;
-}
-
+div#login button:hover          {background: var(--green_darker);}
+div#login input#username_login  {margin-top: 2.5rem;}
 div#login p#acc_create,
-div#log p#show_login
-{
-    text-align: center;
-    color: var(--dark_grey);
-    font-size: 0.8rem;
-}
-
-div#login p#acc_create a
-{
-    color: var(--light_blue);
-    cursor: pointer;
-}
-
-div#login p#acc_create a:hover
-{
-    text-decoration: underline;
-}
+div#log p#show_login            {text-align: center;color: var(--dark_grey);font-size: 0.8rem;}
+div#login p#acc_create a        {color: var(--light_blue);cursor: pointer;}
+div#login p#acc_create a:hover  {text-decoration: underline;}
+div#login i:hover               {color: var(--red);}

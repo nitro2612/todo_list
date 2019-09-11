@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e00864-1d57-45b6-aeac-814abfa374e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/style_management.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/management.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style_frame_add.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style_frame_add.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style_login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style_login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style_sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/management.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style_todo_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style_todo_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style_util.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style_util.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/util/colors.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/util/colors.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +46,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -66,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\todo_list\assets\css" />
       <recent name="E:\Workspace\todo_list\php" />
       <recent name="E:\Workspace\todo_list" />
       <recent name="E:\Workspace\todo_list\assets\database" />
@@ -100,7 +107,8 @@
       <workItem from="1567859707138" duration="6305000" />
       <workItem from="1567935228031" duration="5533000" />
       <workItem from="1567969135859" duration="441000" />
-      <workItem from="1568050064586" duration="7154000" />
+      <workItem from="1568050064586" duration="11092000" />
+      <workItem from="1568132656045" duration="10118000" />
     </task>
     <servers />
   </component>
